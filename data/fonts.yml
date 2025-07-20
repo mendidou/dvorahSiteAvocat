@@ -1,7 +1,7 @@
-accent_font: Lora
+accent_font: Bitter
 accent_weights: 400,700
-heading_font: Montserrat
-body_font: Lato
+heading_font: Inter
+body_font: Inter
 body_style: normal
 heading_style: normal
 accent_style: italic
