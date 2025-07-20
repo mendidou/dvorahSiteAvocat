@@ -68,5 +68,13 @@ window.siteData = {
     "title": "Contact",
     "subtitle": "Nous sommes à votre disposition pour répondre à vos questions",
     "info_title": "Informations de contact"
+  },
+  "colors": {
+    "primary_color": "#0ea5e9",
+    "primary_hover": "#0284c7",
+    "primary_dark": "#0369a1",
+    "accent_color": "#f0f9ff",
+    "text_color": "#333333",
+    "background_color": "#ffffff"
   }
 };

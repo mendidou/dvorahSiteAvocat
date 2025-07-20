@@ -17,6 +17,7 @@ const hero = readYAML('./data/hero.yml');
 const expertise = readYAML('./data/expertise.yml');
 const cabinet = readYAML('./data/cabinet.yml');
 const contact = readYAML('./data/contact.yml');
+const colors = readYAML('./data/colors.yml');
 
 // Créer l'objet de données
 const siteData = {
@@ -24,7 +25,8 @@ const siteData = {
   hero,
   expertise,
   cabinet,
-  contact
+  contact,
+  colors
 };
 
 // Générer le fichier data.js

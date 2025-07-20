@@ -21,6 +21,20 @@ collections:
           - { label: "Adresse", name: "address", widget: "text" }
           - { label: "Horaires", name: "hours", widget: "string" }
 
+  - name: "colors"
+    label: "Couleurs du site"
+    files:
+      - label: "Palette de couleurs"
+        name: "colors"
+        file: "data/colors.yml"
+        fields:
+          - { label: "Couleur principale", name: "primary_color", widget: "color" }
+          - { label: "Couleur principale au survol", name: "primary_hover", widget: "color" }
+          - { label: "Couleur principale foncée", name: "primary_dark", widget: "color" }
+          - { label: "Couleur d'accent", name: "accent_color", widget: "color" }
+          - { label: "Couleur du texte", name: "text_color", widget: "color" }
+          - { label: "Couleur de fond", name: "background_color", widget: "color" }
+
   - name: "hero"
     label: "Section Hero"
     files:
