@@ -1,12 +1,32 @@
 const fs = require('fs');
-const yaml = require('js-yaml');
+let yaml;
+try {
+  yaml = require('js-yaml');
+} catch (e) {
+  console.log('js-yaml not available, using simple YAML parser');
+}
 
 // Script pour générer les couleurs CSS à partir du YAML
 function generateColorCSS() {
   try {
     // Lire le fichier colors.yml
     const colorsYaml = fs.readFileSync('./data/colors.yml', 'utf8');
-    const colors = yaml.load(colorsYaml);
+    
+    // Parse YAML simple (fallback si js-yaml n'est pas disponible)
+    let colors;
+    if (yaml) {
+      colors = yaml.load(colorsYaml);
+    } else {
+      // Parser YAML simple pour les couleurs
+      colors = {};
+      const lines = colorsYaml.split('\n');
+      for (const line of lines) {
+        const match = line.match(/^(\w+):\s*["']?([^"']+)["']?$/);
+        if (match) {
+          colors[match[1]] = match[2];
+        }
+      }
+    }
     
     // Fonction pour convertir hex en rgba
     function hexToRgba(hex, opacity) {

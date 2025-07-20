@@ -1,22 +1,9 @@
 [build]
   publish = "."
-  command = "npm run generate-colors"
+  command = "node generate-colors.js"
 
-# Commande qui s'exécute quand les fichiers data/ changent
-[[build.environment]]
+[build.environment]
   NODE_VERSION = "18"
-
-# Hook qui régénère les couleurs quand data/colors.yml change
-[build.processing]
-  skip_processing = false
-
-# Redirections et headers
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Frame-Options = "DENY"
-    X-XSS-Protection = "1; mode=block"
-    X-Content-Type-Options = "nosniff"
 
 # Configuration pour Netlify CMS
 [[redirects]]
