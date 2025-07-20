@@ -5,7 +5,7 @@ export default function Hero() {
   const { t } = useTranslation('common')
 
   return (
-    <section className="bg-gradient-to-r from-primary-900 to-primary-700 text-white">
+    <section className="bg-gradient-to-r from-primary-dark to-primary text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="text-center">
           <motion.h1
@@ -30,10 +30,10 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <button className="bg-white text-primary-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+            <button className="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
               {t('hero.cta.primary')}
             </button>
-            <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary-700 transition-colors">
+            <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors">
               {t('hero.cta.secondary')}
             </button>
           </motion.div>

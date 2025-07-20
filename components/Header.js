@@ -32,7 +32,7 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-6">
           <div className="flex items-center">
-            <Link href="/" className="text-2xl font-bold text-primary-700">
+            <Link href="/" className="text-2xl font-bold text-primary">
               Dvorah Avocat
             </Link>
           </div>
@@ -42,7 +42,7 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-gray-700 hover:text-primary-600 transition-colors"
+                className="text-gray-700 hover:text-primary-hover transition-colors"
               >
                 {item.name}
               </Link>
@@ -57,7 +57,7 @@ export default function Header() {
                   onClick={() => changeLanguage(lang.code)}
                   className={`px-2 py-1 text-sm ${
                     router.locale === lang.code
-                      ? 'text-primary-600 font-semibold'
+                      ? 'text-primary font-semibold'
                       : 'text-gray-500 hover:text-gray-700'
                   }`}
                 >
@@ -88,7 +88,7 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="block py-2 text-gray-700 hover:text-primary-600"
+                className="block py-2 text-gray-700 hover:text-primary-hover"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}

@@ -56,19 +56,19 @@ export default function Contact() {
             </h3>
             <div className="space-y-4">
               <div className="flex items-center">
-                <span className="text-primary-600 mr-3">📍</span>
+                <span className="text-primary mr-3">📍</span>
                 <span className="text-gray-600">{t('contact.info.address')}</span>
               </div>
               <div className="flex items-center">
-                <span className="text-primary-600 mr-3">📞</span>
+                <span className="text-primary mr-3">📞</span>
                 <span className="text-gray-600">{t('contact.info.phone')}</span>
               </div>
               <div className="flex items-center">
-                <span className="text-primary-600 mr-3">✉️</span>
+                <span className="text-primary mr-3">✉️</span>
                 <span className="text-gray-600">{t('contact.info.email')}</span>
               </div>
               <div className="flex items-center">
-                <span className="text-primary-600 mr-3">⏰</span>
+                <span className="text-primary mr-3">⏰</span>
                 <span className="text-gray-600">{t('contact.info.hours')}</span>
               </div>
             </div>
@@ -91,7 +91,7 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
                 />
               </div>
               <div>
@@ -105,7 +105,7 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
                 />
               </div>
               <div>
@@ -119,7 +119,7 @@ export default function Contact() {
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
                 />
               </div>
               <div>
@@ -133,12 +133,12 @@ export default function Contact() {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
                 />
               </div>
               <button
                 type="submit"
-                className="w-full bg-primary-600 text-white py-2 px-4 rounded-md hover:bg-primary-700 transition-colors"
+                className="w-full bg-primary text-white py-2 px-4 rounded-md hover:bg-primary-hover transition-colors"
               >
                 {t('contact.form.submit')}
               </button>

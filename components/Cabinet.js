@@ -51,7 +51,7 @@ export default function Cabinet() {
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">
                   {member.name}
                 </h3>
-                <p className="text-primary-600 font-semibold mb-4">
+                <p className="text-primary font-semibold mb-4">
                   {member.title}
                 </p>
                 <p className="text-gray-600 leading-relaxed">

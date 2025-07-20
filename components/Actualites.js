@@ -61,7 +61,7 @@ export default function Actualites() {
               </div>
               <div className="p-6">
                 <div className="flex items-center mb-3">
-                  <span className="text-primary-600 text-sm font-semibold">
+                  <span className="text-primary text-sm font-semibold">
                     {article.category}
                   </span>
                   <span className="text-gray-400 text-sm ml-2">
@@ -74,7 +74,7 @@ export default function Actualites() {
                 <p className="text-gray-600 mb-4">
                   {article.excerpt}
                 </p>
-                <button className="text-primary-600 font-semibold hover:text-primary-700">
+                <button className="text-primary font-semibold hover:text-primary-hover">
                   {t('actualites.readMore')}
                 </button>
               </div>

@@ -12,7 +12,7 @@ window.siteData = {
   "hero": {
     "title": "Cabinet d' avocats",
     "highlight": "spécialisé",
-    "subtitle": "Une expertise reconnue en droit pénal, droit économique et droit international. Nous défendons vos intérêts avec rigueur et professionnalisme.",
+    "subtitle": "Une expertise reconnue en droit pénal, droit économique et droit international. Nous défendons vos intérêts avec rigueur et professionnalisme. (lolo)",
     "primary_button": "Prendre rendez-vous",
     "secondary_button": "Nos expertises"
   },
@@ -46,9 +46,9 @@ window.siteData = {
         "icon": "<path fill-rule=\"evenodd\" d=\"M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z\" clip-rule=\"evenodd\"></path><path d=\"M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V9a1 1 0 00-1-1h-1v4a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h8a2 2 0 012 2v2z\"></path>"
       },
       {
-        "title": "Droit pénitentiaire",
-        "description": "Accompagnement en droit pénitentiaire et amélioration des conditions de détention.",
-        "icon": "<path fill-rule=\"evenodd\" d=\"M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2H6zm1 2a1 1 0 000 2h6a1 1 0 100-2H7zM7 8a1 1 0 000 2h6a1 1 0 100-2H7zm0 4a1 1 0 100 2h6a1 1 0 100-2H7z\" clip-rule=\"evenodd\"></path>"
+        "title": "La glandouille a un niveau pro",
+        "description": "kk",
+        "icon": "<path fill-rule=\"evenodd\" d=\"M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z\" clip-rule=\"evenodd\"></path><path d=\"M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V9a1 1 0 00-1-1h-1v4a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h8a2 2 0 012 2v2z\"></path>"
       }
     ]
   },
@@ -66,7 +66,7 @@ window.siteData = {
   },
   "contact": {
     "title": "Contact",
-    "subtitle": "Nous sommes à votre disposition pour répondre à vos questions",
+    "subtitle": "Essaye toujours on vous repondera pas ",
     "info_title": "Informations de contact"
   },
   "colors": {

@@ -15,7 +15,7 @@ module.exports = {
           50: '#f0f9ff',
           100: '#e0f2fe',
           500: 'var(--primary-color)',
-          600: 'var(--primary-hover)',
+          600: 'var(--primary-color)',
           700: 'var(--primary-dark)',
           900: '#0c4a6e',
         },
