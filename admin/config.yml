@@ -35,6 +35,69 @@ collections:
           - { label: "Couleur du texte", name: "text_color", widget: "color" }
           - { label: "Couleur de fond", name: "background_color", widget: "color" }
 
+  - name: "fonts"
+    label: "Polices du site"
+    files:
+      - label: "Configuration des polices"
+        name: "fonts"
+        file: "data/fonts.yml"
+        fields:
+          - label: "Police des titres"
+            name: "heading_font"
+            widget: "select"
+            options:
+              - { label: "Inter", value: "Inter" }
+              - { label: "Roboto", value: "Roboto" }
+              - { label: "Open Sans", value: "Open Sans" }
+              - { label: "Lato", value: "Lato" }
+              - { label: "Montserrat", value: "Montserrat" }
+              - { label: "Poppins", value: "Poppins" }
+              - { label: "Nunito", value: "Nunito" }
+              - { label: "Playfair Display", value: "Playfair Display" }
+              - { label: "Merriweather", value: "Merriweather" }
+              - { label: "Crimson Text", value: "Crimson Text" }
+              - { label: "Libre Baskerville", value: "Libre Baskerville" }
+              - { label: "Source Serif Pro", value: "Source Serif Pro" }
+          - label: "Police du texte"
+            name: "body_font"
+            widget: "select"
+            options:
+              - { label: "Inter", value: "Inter" }
+              - { label: "Roboto", value: "Roboto" }
+              - { label: "Open Sans", value: "Open Sans" }
+              - { label: "Lato", value: "Lato" }
+              - { label: "Source Sans Pro", value: "Source Sans Pro" }
+              - { label: "Nunito", value: "Nunito" }
+              - { label: "Work Sans", value: "Work Sans" }
+              - { label: "Fira Sans", value: "Fira Sans" }
+          - label: "Police d'accent"
+            name: "accent_font"
+            widget: "select"
+            options:
+              - { label: "Playfair Display", value: "Playfair Display" }
+              - { label: "Merriweather", value: "Merriweather" }
+              - { label: "Crimson Text", value: "Crimson Text" }
+              - { label: "Libre Baskerville", value: "Libre Baskerville" }
+              - { label: "Source Serif Pro", value: "Source Serif Pro" }
+              - { label: "Cormorant Garamond", value: "Cormorant Garamond" }
+              - { label: "Lora", value: "Lora" }
+              - { label: "Bitter", value: "Bitter" }
+          - label: "Poids des titres"
+            name: "heading_weights"
+            widget: "select"
+            options:
+              - { label: "Léger (300,400)", value: "300,400" }
+              - { label: "Normal (400,500,600)", value: "400,500,600" }
+              - { label: "Gras (400,600,700)", value: "400,600,700" }
+              - { label: "Très gras (500,700,900)", value: "500,700,900" }
+          - label: "Poids du texte"
+            name: "body_weights"
+            widget: "select"
+            options:
+              - { label: "Léger (300,400)", value: "300,400" }
+              - { label: "Normal (400,500)", value: "400,500" }
+              - { label: "Moyen (400,500,600)", value: "400,500,600" }
+
   - name: "hero"
     label: "Section Hero"
     files:

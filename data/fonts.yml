@@ -1,0 +1,14 @@
+# Configuration des polices Google Fonts
+heading_font: "Montserrat"
+body_font: "Open Sans" 
+accent_font: "Merriweather"
+
+# Poids des polices (séparés par des virgules)
+heading_weights: "400,500,600,700"
+body_weights: "300,400,500"
+accent_weights: "400,700"
+
+# Styles disponibles
+heading_style: "normal"
+body_style: "normal"
+accent_style: "italic"

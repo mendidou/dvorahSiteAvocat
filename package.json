@@ -4,11 +4,13 @@
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
-    "build": "node build-data.js && node generate-colors.js && next build",
+    "build": "node build-data.js && node generate-styles.js && next build",
     "start": "next start",
     "lint": "next lint",
     "build-data": "node build-data.js",
-    "generate-colors": "node generate-colors.js"
+    "generate-colors": "node generate-colors.js",
+    "generate-fonts": "node generate-fonts.js",
+    "generate-styles": "node generate-styles.js"
   },
   "keywords": [],
   "author": "",

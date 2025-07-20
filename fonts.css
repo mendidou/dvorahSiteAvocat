@@ -1,0 +1,38 @@
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400,500,600,700&family=Open%20Sans:wght@300,400,500&family=Merriweather:wght@400,700&display=swap');
+
+/* Variables CSS pour les polices */
+:root {
+  --font-heading: "Montserrat", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+  --font-accent: "Merriweather", serif;
+}
+
+/* Classes de polices dynamiques */
+.font-heading, h1, h2, h3, h4, h5, h6 { 
+  font-family: var(--font-heading) !important; 
+}
+
+.font-body, body, p, span, div { 
+  font-family: var(--font-body) !important; 
+}
+
+.font-accent { 
+  font-family: var(--font-accent) !important; 
+}
+
+/* Poids spécifiques pour les titres */
+h1 { font-weight: 700; }
+h2 { font-weight: 600; }
+h3 { font-weight: 500; }
+
+/* Poids pour le texte */
+body { font-weight: 300; }
+
+/* Classes utilitaires */
+.text-light { font-weight: 300; }
+.text-normal { font-weight: 400; }
+.text-medium { font-weight: 500; }
+.text-semibold { font-weight: 600; }
+.text-bold { font-weight: 700; }

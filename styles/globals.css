@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-body, 'Inter', sans-serif);
   line-height: 1.6;
   color: var(--text-color, #333);
   background-color: var(--background-color, #ffffff);
@@ -30,4 +30,17 @@ body {
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Font families - Variables CSS dynamiques */
+.font-heading, h1, h2, h3, h4, h5, h6 { 
+  font-family: var(--font-heading, 'Inter', sans-serif) !important; 
+}
+
+.font-body, body, p, span, div { 
+  font-family: var(--font-body, 'Inter', sans-serif) !important; 
+}
+
+.font-accent { 
+  font-family: var(--font-accent, 'Playfair Display', serif) !important; 
 }
