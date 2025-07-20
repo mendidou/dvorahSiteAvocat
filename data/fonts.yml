@@ -1,7 +1,7 @@
 accent_font: Bitter
 accent_weights: 400,700
 heading_font: Open Sans
-body_font: Inter
+body_font: Open Sans
 body_style: normal
 heading_style: normal
 accent_style: italic
