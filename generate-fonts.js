@@ -48,7 +48,7 @@ function generateFontsCSS() {
   font-family: var(--font-heading) !important; 
 }
 
-.font-body, body, p, span, div { 
+.font-body, body, p, span, div, label, button, input, textarea, a { 
   font-family: var(--font-body) !important; 
 }
 

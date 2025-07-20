@@ -4,13 +4,13 @@
 
 /* Variables CSS générées automatiquement depuis data/colors.yml */
 :root {
-  --primary-color: #ff4223;
-  --primary-hover: #80154d;
-  --primary-dark: #651645;
-  --accent-color: #db1111;
-  --text-color: #dc0101;
-  --background-color: #e30b0b;
-  --primary-color-10: rgba(255, 66, 35, 0.1);
+  --primary-color: #0c0201;
+  --primary-hover: #ff0e91;
+  --primary-dark: #ffd200;
+  --accent-color: #dbc911;
+  --text-color: #181515;
+  --background-color: #e3d80b;
+  --primary-color-10: rgba(12, 2, 1, 0.1);
 }
 
 /* Classes de couleurs dynamiques */
@@ -76,7 +76,7 @@
   font-family: var(--font-heading) !important; 
 }
 
-.font-body, body, p, span, div { 
+.font-body, body, p, span, div, label, button, input, textarea, a { 
   font-family: var(--font-body) !important; 
 }
 

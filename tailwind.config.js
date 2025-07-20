@@ -25,6 +25,13 @@ module.exports = {
           bg: 'var(--background-color)',
         }
       },
+      fontFamily: {
+        'heading': 'var(--font-heading)',
+        'body': 'var(--font-body)',
+        'accent': 'var(--font-accent)',
+        'sans': 'var(--font-body)',
+        'serif': 'var(--font-accent)',
+      },
     },
   },
   plugins: [],
