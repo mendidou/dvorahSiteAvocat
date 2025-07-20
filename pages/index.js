@@ -12,22 +12,22 @@ export default function Home() {
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-6">
-            <div className="text-2xl font-bold text-blue-700">
+            <div className="text-2xl font-bold text-primary">
               Dvorah Avocat
             </div>
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#accueil" className="text-gray-700 hover:text-blue-600">Accueil</a>
-              <a href="#cabinet" className="text-gray-700 hover:text-blue-600">Cabinet</a>
-              <a href="#expertise" className="text-gray-700 hover:text-blue-600">Expertise</a>
-              <a href="#actualites" className="text-gray-700 hover:text-blue-600">Actualités</a>
-              <a href="#contact" className="text-gray-700 hover:text-blue-600">Contact</a>
+              <a href="#accueil" className="text-gray-700 hover:text-primary">Accueil</a>
+              <a href="#cabinet" className="text-gray-700 hover:text-primary">Cabinet</a>
+              <a href="#expertise" className="text-gray-700 hover:text-primary">Expertise</a>
+              <a href="#actualites" className="text-gray-700 hover:text-primary">Actualités</a>
+              <a href="#contact" className="text-gray-700 hover:text-primary">Contact</a>
             </div>
           </div>
         </nav>
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white">
+      <section className="bg-gradient-to-r from-primary-dark to-primary text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
@@ -37,10 +37,10 @@ export default function Home() {
               Cabinet d'avocats spécialisé en droit pénal, droit économique et droit international
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-blue-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100">
+              <button className="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100">
                 Prendre rendez-vous
               </button>
-              <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-700">
+              <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary">
                 Découvrir nos expertises
               </button>
             </div>
@@ -109,7 +109,7 @@ export default function Home() {
             </div>
             <div className="text-center lg:text-left">
               <h3 className="text-2xl font-bold text-gray-900 mb-2">Maître Dvorah</h3>
-              <p className="text-blue-600 font-semibold mb-4">Avocate au Barreau de Paris</p>
+              <p className="text-primary font-semibold mb-4">Avocate au Barreau de Paris</p>
               <p className="text-gray-600 leading-relaxed">
                 Avocate expérimentée spécialisée en droit pénal et droit des affaires, Maître Dvorah met son expertise au service de ses clients depuis plus de 10 ans.
               </p>
@@ -132,19 +132,19 @@ export default function Home() {
               <h3 className="text-xl font-semibold text-gray-900 mb-6">Informations de contact</h3>
               <div className="space-y-4">
                 <div className="flex items-center">
-                  <span className="text-blue-600 mr-3">📍</span>
+                  <span className="text-primary mr-3">📍</span>
                   <span className="text-gray-600">123 Rue de la Paix, 75001 Paris</span>
                 </div>
                 <div className="flex items-center">
-                  <span className="text-blue-600 mr-3">📞</span>
+                  <span className="text-primary mr-3">📞</span>
                   <span className="text-gray-600">+33 1 23 45 67 89</span>
                 </div>
                 <div className="flex items-center">
-                  <span className="text-blue-600 mr-3">✉️</span>
+                  <span className="text-primary mr-3">✉️</span>
                   <span className="text-gray-600">contact@dvorah-avocat.fr</span>
                 </div>
                 <div className="flex items-center">
-                  <span className="text-blue-600 mr-3">⏰</span>
+                  <span className="text-primary mr-3">⏰</span>
                   <span className="text-gray-600">Lun-Ven : 9h00-18h00</span>
                 </div>
               </div>
@@ -152,21 +152,21 @@ export default function Home() {
             <form className="space-y-6">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">Nom complet</label>
-                <input type="text" className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                <input type="text" className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" />
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                <input type="email" className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                <input type="email" className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" />
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">Sujet</label>
-                <input type="text" className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                <input type="text" className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" />
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
-                <textarea rows={4} className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                <textarea rows={4} className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" />
               </div>
-              <button type="submit" className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700">
+              <button type="submit" className="w-full bg-primary text-white py-2 px-4 rounded-md hover:bg-primary-hover">
                 Envoyer le message
               </button>
             </form>
