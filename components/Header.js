@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
 import { motion } from 'framer-motion'
+import { refreshColors } from '../lib/useColors'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -25,6 +26,11 @@ export default function Header() {
 
   const changeLanguage = (locale) => {
     router.push(router.asPath, router.asPath, { locale })
+  }
+
+  const handleRefreshColors = async () => {
+    await refreshColors()
+    console.log('Colors refreshed!')
   }
 
   return (
@@ -65,6 +71,17 @@ export default function Header() {
                 </button>
               ))}
             </div>
+
+            {/* Bouton de rafraîchissement des couleurs (visible seulement en dev) */}
+            {process.env.NODE_ENV === 'development' && (
+              <button
+                onClick={handleRefreshColors}
+                className="hidden md:block p-2 text-gray-500 hover:text-primary rounded-md"
+                title="Rafraîchir les couleurs"
+              >
+                🎨
+              </button>
+            )}
 
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
