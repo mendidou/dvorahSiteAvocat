@@ -1,0 +1,102 @@
+{
+  "site": {
+    "title": "Dvorah Abogada - Bufete de Abogados Especializado",
+    "description": "Bufete de abogados especializado en derecho penal, derecho económico y derecho internacional"
+  },
+  "nav": {
+    "home": "Inicio",
+    "cabinet": "Bufete",
+    "expertise": "Experiencia",
+    "actualites": "Noticias",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Excelencia jurídica y defensa de sus derechos",
+    "subtitle": "Bufete de abogados especializado en derecho penal, derecho económico y derecho internacional",
+    "cta": {
+      "primary": "Pedir cita",
+      "secondary": "Descubrir nuestras especialidades"
+    }
+  },
+  "expertise": {
+    "title": "Nuestras áreas de especialización",
+    "subtitle": "Experiencia reconocida en diferentes áreas del derecho",
+    "criminal": {
+      "title": "Derecho Penal",
+      "description": "Defensa penal y apoyo jurídico en todos los procedimientos penales"
+    },
+    "economic": {
+      "title": "Derecho Económico",
+      "description": "Asesoramiento y defensa en materia de derecho empresarial y derecho económico"
+    },
+    "international": {
+      "title": "Derecho Internacional",
+      "description": "Experiencia en derecho internacional y procedimientos transfronterizos"
+    },
+    "cyber": {
+      "title": "Cibercrimen",
+      "description": "Especialización en defensa contra cibercrimen"
+    },
+    "press": {
+      "title": "Derecho de Prensa",
+      "description": "Protección de la reputación y derecho de prensa"
+    },
+    "prison": {
+      "title": "Derecho Penitenciario",
+      "description": "Apoyo en derecho penitenciario y condiciones de detención"
+    }
+  },
+  "cabinet": {
+    "title": "El Bufete",
+    "subtitle": "Un equipo de abogados experimentados a su servicio",
+    "dvorah": {
+      "name": "Maestra Dvorah",
+      "title": "Abogada del Colegio de Abogados de París",
+      "description": "Abogada experimentada especializada en derecho penal y derecho empresarial, la Maestra Dvorah ha puesto su experiencia al servicio de sus clientes durante más de 10 años."
+    }
+  },
+  "actualites": {
+    "title": "Noticias",
+    "subtitle": "Siga nuestras noticias jurídicas y últimas publicaciones",
+    "readMore": "Leer más",
+    "article1": {
+      "title": "Nueva reforma del derecho penal",
+      "excerpt": "Análisis de los últimos desarrollos legislativos en derecho penal",
+      "category": "Derecho Penal"
+    },
+    "article2": {
+      "title": "Cibercrimen: nuevas tendencias",
+      "excerpt": "Enfoque en la evolución del cibercrimen y medios de defensa",
+      "category": "Cibercrimen"
+    },
+    "article3": {
+      "title": "Derecho empresarial: novedades 2024",
+      "excerpt": "Los principales desarrollos en derecho empresarial este año",
+      "category": "Derecho Empresarial"
+    }
+  },
+  "contact": {
+    "title": "Contáctenos",
+    "subtitle": "Estamos a su disposición para responder sus preguntas",
+    "info": {
+      "title": "Información de contacto",
+      "address": "123 Rue de la Paix, 75001 París",
+      "phone": "+33 1 23 45 67 89",
+      "email": "contact@dvorah-avocat.fr",
+      "hours": "Lun-Vie: 9:00-18:00"
+    },
+    "form": {
+      "name": "Nombre completo",
+      "email": "Email",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "submit": "Enviar mensaje"
+    }
+  },
+  "footer": {
+    "description": "Bufete de abogados especializado que ofrece experiencia jurídica de calidad en diferentes áreas del derecho.",
+    "navigation": "Navegación",
+    "contact": "Contacto",
+    "rights": "Todos los derechos reservados."
+  }
+}

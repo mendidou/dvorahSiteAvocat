@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dvorah Avocat - Cabinet d'avocats spécialisé</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="data.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        html { 
+            scroll-behavior: smooth; 
+            font-family: 'Inter', sans-serif;
+        }
+        .font-manrope { font-family: 'Manrope', sans-serif; }
+        .font-sora { font-family: 'Sora', sans-serif; }
+        .fade-in { 
+            opacity: 0; 
+            transform: translateY(20px); 
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out; 
+        }
+        .fade-in.visible { 
+            opacity: 1; 
+            transform: translateY(0); 
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+        .accent-blue { color: #2d35ad; }
+        .bg-accent-blue { background-color: #2d35ad; }
+        .border-accent-blue { border-color: #2d35ad; }
+        .card-hover:hover { 
+            transform: translateY(-4px); 
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); 
+        }
+        .card-hover { 
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Header -->
+    <header class="bg-white sticky top-0 z-50 border-b border-gray-100">
+        <nav class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-semibold accent-blue" id="site-name">
+                    Dvorah Avocat
+                </div>
+                <div class="flex items-center space-x-6">
+                    <div class="hidden md:flex items-center space-x-8">
+                        <a href="#accueil" class="text-gray-700 hover:text-gray-900 font-medium transition-colors text-sm">Accueil</a>
+                        <a href="#cabinet" class="text-gray-700 hover:text-gray-900 font-medium transition-colors text-sm">Cabinet</a>
+                        <a href="#expertise" class="text-gray-700 hover:text-gray-900 font-medium transition-colors text-sm">Expertise</a>
+                        <a href="#actualites" class="text-gray-700 hover:text-gray-900 font-medium transition-colors text-sm">Actualités</a>
+                        <a href="#contact" class="text-gray-700 hover:text-gray-900 font-medium transition-colors text-sm">Contact</a>
+                    </div>
+                    <div class="relative">
+                        <button id="language-toggle" class="text-sm px-3 py-1 accent-blue font-medium border border-gray-300 rounded-md hover:bg-gray-50 transition-colors flex items-center space-x-1">
+                            <span>FR</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="language-menu" class="absolute right-0 mt-2 w-16 bg-white border border-gray-200 rounded-md shadow-lg hidden z-50">
+                            <button class="block w-full text-left px-3 py-2 text-sm text-gray-700 hover:bg-gray-100">FR</button>
+                            <button class="block w-full text-left px-3 py-2 text-sm text-gray-700 hover:bg-gray-100">EN</button>
+                            <button class="block w-full text-left px-3 py-2 text-sm text-gray-700 hover:bg-gray-100">ES</button>
+                        </div>
+                    </div>
+                    <button id="mobile-menu-toggle" class="md:hidden text-gray-700 hover:text-gray-900">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-100">
+                <div class="px-6 py-4 space-y-3">
+                    <a href="#accueil" class="block text-gray-700 hover:text-gray-900 font-medium transition-colors">Accueil</a>
+                    <a href="#cabinet" class="block text-gray-700 hover:text-gray-900 font-medium transition-colors">Cabinet</a>
+                    <a href="#expertise" class="block text-gray-700 hover:text-gray-900 font-medium transition-colors">Expertise</a>
+                    <a href="#actualites" class="block text-gray-700 hover:text-gray-900 font-medium transition-colors">Actualités</a>
+                    <a href="#contact" class="block text-gray-700 hover:text-gray-900 font-medium transition-colors">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero-bg py-12 sm:py-20 lg:py-32">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                <div class="fade-in text-center lg:text-left">
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-manrope leading-tight mb-4 sm:mb-6">
+                        <span id="hero-title">Cabinet d'avocats</span>
+                        <span class="block accent-blue" id="hero-highlight">spécialisé</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-gray-600 mb-6 sm:mb-8 leading-relaxed" id="hero-subtitle">
+                        Une expertise reconnue en droit pénal, droit économique et droit international. 
+                        Nous défendons vos intérêts avec rigueur et professionnalisme.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                        <button class="bg-accent-blue text-white px-6 sm:px-8 py-3 rounded-md font-medium hover:bg-blue-700 transition-colors text-sm sm:text-base" id="hero-primary-btn">
+                            Prendre rendez-vous
+                        </button>
+                        <button class="border border-accent-blue accent-blue px-6 sm:px-8 py-3 rounded-md font-medium hover:bg-blue-50 transition-colors text-sm sm:text-base" id="hero-secondary-btn">
+                            Nos expertises
+                        </button>
+                    </div>
+                </div>
+                <div class="fade-in mt-8 lg:mt-0">
+                    <div class="w-full h-64 sm:h-80 lg:h-96 bg-gray-200 rounded-lg shadow-lg flex items-center justify-center">
+                        <span class="text-gray-500 text-sm sm:text-base">Photo professionelle à venir</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="py-12 sm:py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12 sm:mb-16 fade-in">
+                <h2 class="text-2xl sm:text-3xl font-bold font-manrope mb-3 sm:mb-4" id="expertise-title">Domaines d'expertise</h2>
+                <p class="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4" id="expertise-subtitle">
+                    Notre cabinet vous accompagne dans tous vos besoins juridiques avec une expertise pointue et reconnue.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8" id="expertise-grid">
+                <!-- Contenu généré dynamiquement par le CMS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Cabinet Section -->
+    <section id="cabinet" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl font-bold font-manrope mb-4" id="cabinet-title">Le Cabinet</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto" id="cabinet-subtitle">
+                    Une équipe d'avocats expérimentés à votre service
+                </p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" id="cabinet-content">
+                <!-- Contenu généré dynamiquement -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Actualités Section -->
+    <section id="actualites" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl font-bold font-manrope mb-4">Actualités</h2>
+                <p class="text-lg text-gray-600">Suivez notre actualité juridique et nos dernières publications</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <article class="bg-white border border-gray-200 rounded-lg overflow-hidden card-hover fade-in">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <span class="text-gray-500">Image article</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="text-sm accent-blue font-medium">Droit pénal</span>
+                            <span class="text-gray-400 text-sm ml-2">• 15 janv. 2024</span>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-3">Nouvelle réforme du droit pénal</h3>
+                        <p class="text-gray-600 text-sm">Analyse des dernières évolutions législatives en matière de droit pénal et leurs impacts...</p>
+                    </div>
+                </article>
+                <article class="bg-white border border-gray-200 rounded-lg overflow-hidden card-hover fade-in">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <span class="text-gray-500">Image article</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="text-sm accent-blue font-medium">Cybercriminalité</span>
+                            <span class="text-gray-400 text-sm ml-2">• 10 janv. 2024</span>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-3">Cybercriminalité : nouvelles tendances</h3>
+                        <p class="text-gray-600 text-sm">Focus sur l'évolution de la cybercriminalité et les moyens de défense efficaces...</p>
+                    </div>
+                </article>
+                <article class="bg-white border border-gray-200 rounded-lg overflow-hidden card-hover fade-in">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <span class="text-gray-500">Image article</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="text-sm accent-blue font-medium">Droit des affaires</span>
+                            <span class="text-gray-400 text-sm ml-2">• 5 janv. 2024</span>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-3">Droit des affaires : nouveautés 2024</h3>
+                        <p class="text-gray-600 text-sm">Les principales évolutions du droit des affaires cette année et leurs implications...</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl font-bold font-manrope mb-4" id="contact-title">Contact</h2>
+                <p class="text-lg text-gray-600" id="contact-subtitle">Nous sommes à votre disposition pour répondre à vos questions</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="fade-in">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-6" id="contact-info-title">Informations de contact</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-4 mt-1">
+                                <svg class="w-5 h-5 accent-blue" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1">Adresse</h4>
+                                <p class="text-gray-600" id="contact-address">123 Rue de la Paix<br>75001 Paris, France</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-4 mt-1">
+                                <svg class="w-5 h-5 accent-blue" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1">Téléphone</h4>
+                                <p class="text-gray-600" id="contact-phone">+33 1 23 45 67 89</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-4 mt-1">
+                                <svg class="w-5 h-5 accent-blue" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1">Email</h4>
+                                <p class="text-gray-600" id="contact-email">contact@dvorah-avocat.fr</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-4 mt-1">
+                                <svg class="w-5 h-5 accent-blue" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1">Horaires</h4>
+                                <p class="text-gray-600" id="contact-hours">Lundi - Vendredi<br>9h00 - 18h00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fade-in">
+                    <form class="space-y-6" onsubmit="alert('Message envoyé!'); return false;">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Prénom</label>
+                                <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Nom</label>
+                                <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                            <input type="email" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Objet</label>
+                            <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-accent-blue text-white py-3 px-6 rounded-md font-medium hover:bg-blue-700 transition-colors">
+                            Envoyer le message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <h3 class="text-xl font-bold font-manrope mb-4">Dvorah Avocat</h3>
+                    <p class="text-gray-400 mb-4 max-w-md">
+                        Cabinet d'avocats spécialisé offrant une expertise juridique de qualité 
+                        dans différents domaines du droit avec un accompagnement personnalisé.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Navigation</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#accueil" class="text-gray-400 hover:text-white transition-colors">Accueil</a></li>
+                        <li><a href="#cabinet" class="text-gray-400 hover:text-white transition-colors">Cabinet</a></li>
+                        <li><a href="#expertise" class="text-gray-400 hover:text-white transition-colors">Expertise</a></li>
+                        <li><a href="#actualites" class="text-gray-400 hover:text-white transition-colors">Actualités</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>123 Rue de la Paix</li>
+                        <li>75001 Paris</li>
+                        <li>+33 1 23 45 67 89</li>
+                        <li>contact@dvorah-avocat.fr</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Dvorah Avocat. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Load CMS data
+        function loadCMSData() {
+            if (window.siteData) {
+                updateContent(window.siteData.general, window.siteData.hero, window.siteData.expertise, window.siteData.cabinet, window.siteData.contact);
+            }
+        }
+        
+        function updateContent(general, hero, expertise, cabinet, contact) {
+            // Update site name
+            if (general?.site_name) {
+                document.getElementById('site-name').textContent = general.site_name;
+                document.title = general.site_title || general.site_name;
+            }
+            
+            // Update hero section
+            if (hero?.title) document.getElementById('hero-title').textContent = hero.title;
+            if (hero?.highlight) document.getElementById('hero-highlight').textContent = hero.highlight;
+            if (hero?.subtitle) document.getElementById('hero-subtitle').textContent = hero.subtitle;
+            if (hero?.primary_button) document.getElementById('hero-primary-btn').textContent = hero.primary_button;
+            if (hero?.secondary_button) document.getElementById('hero-secondary-btn').textContent = hero.secondary_button;
+            
+            // Update expertise section
+            if (expertise?.title) document.getElementById('expertise-title').textContent = expertise.title;
+            if (expertise?.subtitle) document.getElementById('expertise-subtitle').textContent = expertise.subtitle;
+            
+            // Update expertise grid
+            if (expertise?.domains) {
+                const grid = document.getElementById('expertise-grid');
+                grid.innerHTML = '';
+                
+                expertise.domains.forEach(domain => {
+                    const card = document.createElement('div');
+                    card.className = 'bg-white border border-gray-200 rounded-lg p-4 sm:p-6 card-hover fade-in';
+                    card.innerHTML = `
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
+                            <svg class="w-5 h-5 sm:w-6 sm:h-6 accent-blue" fill="currentColor" viewBox="0 0 20 20">
+                                ${domain.icon}
+                            </svg>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-semibold mb-2 sm:mb-3">${domain.title}</h3>
+                        <p class="text-gray-600 text-sm sm:text-base">${domain.description}</p>
+                    `;
+                    grid.appendChild(card);
+                });
+            }
+            
+            // Update cabinet section
+            if (cabinet?.title) document.getElementById('cabinet-title').textContent = cabinet.title;
+            if (cabinet?.subtitle) document.getElementById('cabinet-subtitle').textContent = cabinet.subtitle;
+            
+            // Update cabinet content
+            if (cabinet?.team) {
+                const content = document.getElementById('cabinet-content');
+                content.innerHTML = '';
+                
+                cabinet.team.forEach(member => {
+                    const memberDiv = document.createElement('div');
+                    memberDiv.className = 'fade-in';
+                    memberDiv.innerHTML = `
+                        <div class="w-full h-96 bg-gray-200 rounded-lg shadow-md flex items-center justify-center">
+                            <span class="text-gray-500">Portrait professionnel</span>
+                        </div>
+                    `;
+                    
+                    const infoDiv = document.createElement('div');
+                    infoDiv.className = 'fade-in text-center lg:text-left';
+                    infoDiv.innerHTML = `
+                        <div class="space-y-6">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">${member.name}</h3>
+                                <p class="accent-blue font-medium mb-4">${member.title}</p>
+                                <p class="text-gray-600 leading-relaxed">${member.description}</p>
+                            </div>
+                            ${member.quote ? `
+                            <div class="border-l-4 border-accent-blue pl-4">
+                                <p class="text-gray-600 italic">"${member.quote}"</p>
+                            </div>
+                            ` : ''}
+                        </div>
+                    `;
+                    
+                    content.appendChild(memberDiv);
+                    content.appendChild(infoDiv);
+                });
+            }
+            
+            // Update contact section
+            if (contact?.title) document.getElementById('contact-title').textContent = contact.title;
+            if (contact?.subtitle) document.getElementById('contact-subtitle').textContent = contact.subtitle;
+            if (contact?.info_title) document.getElementById('contact-info-title').textContent = contact.info_title;
+            
+            // Update contact info
+            if (general?.address) document.getElementById('contact-address').innerHTML = general.address.replace(/\n/g, '<br>');
+            if (general?.phone) document.getElementById('contact-phone').textContent = general.phone;
+            if (general?.email) document.getElementById('contact-email').textContent = general.email;
+            if (general?.hours) document.getElementById('contact-hours').innerHTML = general.hours.replace(/\n/g, '<br>');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Load CMS data first
+            loadCMSData();
+            
+            const fadeElements = document.querySelectorAll('.fade-in');
+            fadeElements.forEach(el => observer.observe(el));
+            
+            // Language menu toggle
+            const languageToggle = document.getElementById('language-toggle');
+            const languageMenu = document.getElementById('language-menu');
+            
+            languageToggle.addEventListener('click', (e) => {
+                e.stopPropagation();
+                languageMenu.classList.toggle('hidden');
+            });
+            
+            // Mobile menu toggle
+            const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuToggle.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            // Close menus when clicking outside or on mobile links
+            document.addEventListener('click', (e) => {
+                if (!languageToggle.contains(e.target) && !languageMenu.contains(e.target)) {
+                    languageMenu.classList.add('hidden');
+                }
+                if (!mobileMenuToggle.contains(e.target) && !mobileMenu.contains(e.target)) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+            
+            // Close mobile menu when clicking on a link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+            
+            // Handle language selection
+            const languageOptions = languageMenu.querySelectorAll('button');
+            languageOptions.forEach(option => {
+                option.addEventListener('click', () => {
+                    const selectedLang = option.textContent;
+                    languageToggle.querySelector('span').textContent = selectedLang;
+                    languageMenu.classList.add('hidden');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

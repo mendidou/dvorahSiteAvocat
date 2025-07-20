@@ -1,0 +1,96 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "config"
+    label: "Configuration du site"
+    files:
+      - label: "Informations générales"
+        name: "general"
+        file: "data/general.yml"
+        fields:
+          - { label: "Nom du cabinet", name: "site_name", widget: "string" }
+          - { label: "Titre de la page", name: "site_title", widget: "string" }
+          - { label: "Description", name: "site_description", widget: "text" }
+          - { label: "Téléphone", name: "phone", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Adresse", name: "address", widget: "text" }
+          - { label: "Horaires", name: "hours", widget: "string" }
+
+  - name: "hero"
+    label: "Section Hero"
+    files:
+      - label: "Hero"
+        name: "hero"
+        file: "data/hero.yml"
+        fields:
+          - { label: "Titre principal", name: "title", widget: "string" }
+          - { label: "Mot en surbrillance", name: "highlight", widget: "string" }
+          - { label: "Sous-titre", name: "subtitle", widget: "text" }
+          - { label: "Bouton principal", name: "primary_button", widget: "string" }
+          - { label: "Bouton secondaire", name: "secondary_button", widget: "string" }
+          - { label: "Image hero", name: "hero_image", widget: "image", required: false }
+
+  - name: "expertise"
+    label: "Domaines d'expertise"
+    files:
+      - label: "Expertise"
+        name: "expertise"
+        file: "data/expertise.yml"
+        fields:
+          - { label: "Titre", name: "title", widget: "string" }
+          - { label: "Sous-titre", name: "subtitle", widget: "text" }
+          - label: "Domaines"
+            name: "domains"
+            widget: "list"
+            fields:
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Icône SVG", name: "icon", widget: "text" }
+
+  - name: "cabinet"
+    label: "Section Cabinet"
+    files:
+      - label: "Cabinet"
+        name: "cabinet"
+        file: "data/cabinet.yml"
+        fields:
+          - { label: "Titre", name: "title", widget: "string" }
+          - { label: "Sous-titre", name: "subtitle", widget: "text" }
+          - label: "Membres de l'équipe"
+            name: "team"
+            widget: "list"
+            fields:
+              - { label: "Nom", name: "name", widget: "string" }
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Citation", name: "quote", widget: "text", required: false }
+              - { label: "Photo", name: "photo", widget: "image", required: false }
+
+  - name: "actualites"
+    label: "Actualités"
+    folder: "data/actualites"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Titre", name: "title", widget: "string" }
+      - { label: "Extrait", name: "excerpt", widget: "text" }
+      - { label: "Catégorie", name: "category", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Contenu", name: "body", widget: "markdown" }
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Page Contact"
+        name: "contact"
+        file: "data/contact.yml"
+        fields:
+          - { label: "Titre", name: "title", widget: "string" }
+          - { label: "Sous-titre", name: "subtitle", widget: "text" }
+          - { label: "Titre section info", name: "info_title", widget: "string" }

@@ -1,0 +1,102 @@
+{
+  "site": {
+    "title": "Dvorah Lawyer - Specialized Law Firm",
+    "description": "Law firm specialized in criminal law, economic law and international law"
+  },
+  "nav": {
+    "home": "Home",
+    "cabinet": "Firm",
+    "expertise": "Expertise",
+    "actualites": "News",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Legal excellence and defense of your rights",
+    "subtitle": "Law firm specialized in criminal law, economic law and international law",
+    "cta": {
+      "primary": "Make an appointment",
+      "secondary": "Discover our expertise"
+    }
+  },
+  "expertise": {
+    "title": "Our areas of expertise",
+    "subtitle": "Recognized expertise in various areas of law",
+    "criminal": {
+      "title": "Criminal Law",
+      "description": "Criminal defense and legal support in all criminal procedures"
+    },
+    "economic": {
+      "title": "Economic Law",
+      "description": "Advice and defense in business law and economic law matters"
+    },
+    "international": {
+      "title": "International Law",
+      "description": "Expertise in international law and cross-border procedures"
+    },
+    "cyber": {
+      "title": "Cybercrime",
+      "description": "Specialization in cybercrime defense"
+    },
+    "press": {
+      "title": "Press Law",
+      "description": "Reputation protection and press law"
+    },
+    "prison": {
+      "title": "Prison Law",
+      "description": "Support in prison law and detention conditions"
+    }
+  },
+  "cabinet": {
+    "title": "The Firm",
+    "subtitle": "A team of experienced lawyers at your service",
+    "dvorah": {
+      "name": "Master Dvorah",
+      "title": "Lawyer at the Paris Bar",
+      "description": "Experienced lawyer specialized in criminal law and business law, Master Dvorah has been putting her expertise at the service of her clients for over 10 years."
+    }
+  },
+  "actualites": {
+    "title": "News",
+    "subtitle": "Follow our legal news and latest publications",
+    "readMore": "Read more",
+    "article1": {
+      "title": "New criminal law reform",
+      "excerpt": "Analysis of the latest legislative developments in criminal law",
+      "category": "Criminal Law"
+    },
+    "article2": {
+      "title": "Cybercrime: new trends",
+      "excerpt": "Focus on the evolution of cybercrime and means of defense",
+      "category": "Cybercrime"
+    },
+    "article3": {
+      "title": "Business law: 2024 updates",
+      "excerpt": "The main developments in business law this year",
+      "category": "Business Law"
+    }
+  },
+  "contact": {
+    "title": "Contact us",
+    "subtitle": "We are at your disposal to answer your questions",
+    "info": {
+      "title": "Contact information",
+      "address": "123 Rue de la Paix, 75001 Paris",
+      "phone": "+33 1 23 45 67 89",
+      "email": "contact@dvorah-avocat.fr",
+      "hours": "Mon-Fri: 9:00 AM-6:00 PM"
+    },
+    "form": {
+      "name": "Full name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send message"
+    }
+  },
+  "footer": {
+    "description": "Specialized law firm offering quality legal expertise in various areas of law.",
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "rights": "All rights reserved."
+  }
+}

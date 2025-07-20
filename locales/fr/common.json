@@ -1,0 +1,102 @@
+{
+  "site": {
+    "title": "Dvorah Avocat - Cabinet d'avocats spécialisé",
+    "description": "Cabinet d'avocats spécialisé en droit pénal, droit économique et droit international"
+  },
+  "nav": {
+    "home": "Accueil",
+    "cabinet": "Cabinet",
+    "expertise": "Expertise",
+    "actualites": "Actualités",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Excellence juridique et défense de vos droits",
+    "subtitle": "Cabinet d'avocats spécialisé en droit pénal, droit économique et droit international",
+    "cta": {
+      "primary": "Prendre rendez-vous",
+      "secondary": "Découvrir nos expertises"
+    }
+  },
+  "expertise": {
+    "title": "Nos domaines d'expertise",
+    "subtitle": "Une expertise reconnue dans différents domaines du droit",
+    "criminal": {
+      "title": "Droit pénal",
+      "description": "Défense pénale et accompagnement juridique dans toutes les procédures pénales"
+    },
+    "economic": {
+      "title": "Droit économique",
+      "description": "Conseil et défense en matière de droit des affaires et droit économique"
+    },
+    "international": {
+      "title": "Droit international",
+      "description": "Expertise en droit international et procédures transfrontalières"
+    },
+    "cyber": {
+      "title": "Cybercriminalité",
+      "description": "Spécialisation dans la défense en matière de cybercriminalité"
+    },
+    "press": {
+      "title": "Droit de la presse",
+      "description": "Protection de la réputation et droit de la presse"
+    },
+    "prison": {
+      "title": "Droit pénitentiaire",
+      "description": "Accompagnement en droit pénitentiaire et conditions de détention"
+    }
+  },
+  "cabinet": {
+    "title": "Le Cabinet",
+    "subtitle": "Une équipe d'avocats expérimentés à votre service",
+    "dvorah": {
+      "name": "Maître Dvorah",
+      "title": "Avocate au Barreau de Paris",
+      "description": "Avocate expérimentée spécialisée en droit pénal et droit des affaires, Maître Dvorah met son expertise au service de ses clients depuis plus de 10 ans."
+    }
+  },
+  "actualites": {
+    "title": "Actualités",
+    "subtitle": "Suivez notre actualité juridique et nos dernières publications",
+    "readMore": "Lire la suite",
+    "article1": {
+      "title": "Nouvelle réforme du droit pénal",
+      "excerpt": "Analyse des dernières évolutions législatives en matière de droit pénal",
+      "category": "Droit pénal"
+    },
+    "article2": {
+      "title": "Cybercriminalité : les nouvelles tendances",
+      "excerpt": "Focus sur l'évolution de la cybercriminalité et les moyens de défense",
+      "category": "Cybercriminalité"
+    },
+    "article3": {
+      "title": "Droit des affaires : nouveautés 2024",
+      "excerpt": "Les principales évolutions du droit des affaires cette année",
+      "category": "Droit des affaires"
+    }
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Nous sommes à votre disposition pour répondre à vos questions",
+    "info": {
+      "title": "Informations de contact",
+      "address": "123 Rue de la Paix, 75001 Paris",
+      "phone": "+33 1 23 45 67 89",
+      "email": "contact@dvorah-avocat.fr",
+      "hours": "Lun-Ven : 9h00-18h00"
+    },
+    "form": {
+      "name": "Nom complet",
+      "email": "Email",
+      "subject": "Sujet",
+      "message": "Message",
+      "submit": "Envoyer le message"
+    }
+  },
+  "footer": {
+    "description": "Cabinet d'avocats spécialisé offrant une expertise juridique de qualité dans différents domaines du droit.",
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "rights": "Tous droits réservés."
+  }
+}
