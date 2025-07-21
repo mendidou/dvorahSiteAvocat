@@ -1,7 +1,12 @@
-site_name: "Dvorah Avocat"
-site_title: "Dvorah Avocat - Cabinet d'avocats spécialisé"
-site_description: "Cabinet d'avocats spécialisé en droit pénal, droit économique et droit international"
-phone: "+33 1 23 45 67 89"
-email: "contact@dvorah-avocat.fr"
-address: "123 Rue de la Paix\n75001 Paris, France"
-hours: "Lundi - Vendredi\n9h00 - 18h00"
+site_name: mendy Avocat
+site_title: Dvorah Avocat - Cabinet d'avocats spécialisé
+site_description: Cabinet d'avocats spécialisé en droit pénal, droit économique
+  et droit international
+phone: +33 1 23 45 67 89
+email: contact@dvorah-avocat.fr
+address: |-
+  123 Rue de la Paix
+  75001 Paris, France
+hours: |-
+  Lundi - Vendredi
+  9h00 - 18h00
